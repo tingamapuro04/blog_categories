@@ -81,8 +81,7 @@ a {
   font-size: 2rem;
   margin-bottom: 3%;
   align-self: center;
-  box-shadow: inset;
-  background: #393E41;
+  background: #393e41;
   color: #fff;
   width: 100%;
   text-align: center;
@@ -92,7 +91,6 @@ a {
 
 .list-item {
   list-style-type: none;
-  padding-right: 0;
   font-size: 1.4rem;
   padding: 4px 0 0 4px;
   font-weight: 600;

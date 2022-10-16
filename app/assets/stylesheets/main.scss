@@ -19,7 +19,6 @@ body {
 }
 
 .blog-item {
-  // border: 2px solid red;
   flex: 3;
   padding: 6px 12px;
   display: flex;
@@ -37,9 +36,9 @@ body {
 .inner {
   display: flex;
   flex-direction: column;
-  border: 0.5px solid grey ;
+  border: 0.5px solid grey;
   padding: 4px 10px;
-  width: 31%
+  width: 31%;
 }
 
 .mobutu {
@@ -58,6 +57,7 @@ body {
   align-items: flex-start;
   border-radius: 8px;
 }
+
 a {
   text-decoration: none;
 }
@@ -80,11 +80,8 @@ a {
 .Cat-head {
   font-size: 2rem;
   margin-bottom: 3%;
-
   align-self: center;
-  box-shadow: inset;
-  // margin: 2px 4px;
-  background: #393E41;
+  background: #393e41;
   color: #fff;
   width: 100%;
   text-align: center;
@@ -94,7 +91,6 @@ a {
 
 .list-item {
   list-style-type: none;
-  padding-right: 0;
   font-size: 1.4rem;
   padding: 4px 0 0 4px;
   font-weight: 600;
