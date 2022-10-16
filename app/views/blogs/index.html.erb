@@ -1,19 +1,26 @@
-<p style="color: green"><%= notice %></p>
+<div class="index_blog">
+  <p style="color: green"><%= notice %></p>
 
-<h1 class="mobutu">Blogs</h1>
+  <h1 class="mobutu">Blogs</h1>
 
-<div id="blogs">
-  <% @blogs.each do |blog| %>
-    <%= render blog %>
-    <p>
-      <%= link_to "Show this blog", blog %>
-    </p>
-  <% end %>
+  <div id="blogs">
+    <div class="blog-item">
+    <% @blogs.each do |blog| %>
+      <%= render blog %>
+      <p>
+        <%= link_to "View", blog %>
+      </p>
+    <% end %>
+    </div>
 
-  <% @categories.each do |cat| %>
-    <%= link_to cat.category, blogs_path(:cate => cat.id) %> <%= cat.blogs.count %>
-  <% end %>
+    <div class="blog-cat">
+      <% @categories.each do |cat| %>
+        <%= link_to cat.category, blogs_path(:cate => cat.id) %> <%= cat.blogs.count %>
+      <% end %>
+    </div>
+
+  </div>
+
+  <%= link_to "New blog", new_blog_path %>
 
 </div>
-
-<%= link_to "New blog", new_blog_path %>
