@@ -9,6 +9,11 @@
       <%= link_to "Show this blog", blog %>
     </p>
   <% end %>
+
+  <% @categories.each do |cat| %>
+    <%= link_to cat.category, blogs_path(:cate => cat.id) %> <%= cat.blogs.count %>
+  <% end %>
+
 </div>
 
 <%= link_to "New blog", new_blog_path %>
