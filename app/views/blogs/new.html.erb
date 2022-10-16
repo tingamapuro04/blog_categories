@@ -1,9 +1,11 @@
-<h1>New blog</h1>
+<div class="Edit">
+  <h1 class="mobutu">New Blog Post</h1>
 
-<%= render "form", blog: @blog %>
+  <%= render "form", blog: @blog %>
 
-<br>
+  <br>
 
-<div>
-  <%= link_to "Back to blogs", blogs_path %>
+  <div>
+    <%= link_to "Back", blogs_path, class: "btn btn-3" %>
+  </div>
 </div>

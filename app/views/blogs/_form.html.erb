@@ -12,18 +12,18 @@
   <% end %>
 
   <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+    <%= form.label :title, style: "display: block", class: "form-label" %>
+    <%= form.text_field :title, placeholder: "Title", class: "form-control" %>
   </div>
 
   <div>
-    <%= form.label :content, style: "display: block" %>
-    <%= form.text_area :content %>
+    <%= form.label :content, style: "display: block", class: "form-label" %>
+    <%= form.text_area :content, class: "form-control" %>
   </div>
   
-  <div>
-    <%= form.label :category, style: "display: block" %>
-    <%= form.select :category_id, Category.all.map { |c| [c.category,c.id] } %>
+  <div class="otoyo">
+    <%= form.label :category, style: "display: block", class: "form-label" %>
+    <%= form.select :category_id, Category.all.map { |c| [c.category, c.id] } %>
   </div>
   <div>
     <%= form.submit %>
