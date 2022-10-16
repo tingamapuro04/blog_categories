@@ -1,0 +1,12 @@
+<div class="Edit">
+  <h1 class="mobutu">Editing blog</h1>
+
+  <%= render "form", blog: @blog %>
+
+  <br>
+
+  <div>
+    <%= link_to "Show", @blog, class: "btn btn-2" %> |
+    <%= link_to "Back", blogs_path, class: "btn btn-3" %>
+  </div>
+</div>

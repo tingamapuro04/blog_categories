@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.index_blog {
+  width: 85%;
+  margin: 2% auto;
+}
+
+#blogs {
+  display: flex;
+  gap: 12px;
+}
+
+.blog-item {
+  flex: 3;
+  padding: 6px 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.create-new {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 1%;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid grey;
+  padding: 4px 10px;
+  width: 31%;
+}
+
+.mobutu {
+  font-style: italic;
+  font-size: 3rem;
+  margin-bottom: 3%;
+  text-align: center;
+  color: #369efa;
+}
+
+.blog-cat {
+  border: 1px solid grey;
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 8px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #1a74c7;
+  padding: 0 8px;
+  font-size: 24px;
+  color: #fff;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+.btn-1 {
+  border: 1px solid rgba(99, 97, 97, 0.519);
+  color: #369efa;
+  background: #fff;
+}
+
+.Cat-head {
+  font-size: 2rem;
+  margin-bottom: 3%;
+  align-self: center;
+  background: #393e41;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.list-item {
+  list-style-type: none;
+  font-size: 1.4rem;
+  padding: 4px 0 0 4px;
+  font-weight: 600;
+  padding-left: 8px;
+}
+
+#count {
+  padding: 0 4px;
+  background: #369efa;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1.3rem;
+}
