@@ -7,14 +7,11 @@ class BlogsController < ApplicationController
 
     cate = params[:cate]
 
-    if !cate.nil?
-      @blogs = Blog.where(:category_id => cate)
-    else
-      @blogs = Blog.all
-    end
-
-
-    
+    @blogs = if cate.nil?
+               Blog.all
+             else
+               Blog.where(category_id: cate)
+             end
   end
 
   # GET /blogs/1 or /blogs/1.json
