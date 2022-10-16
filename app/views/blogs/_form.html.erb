@@ -20,7 +20,11 @@
     <%= form.label :content, style: "display: block" %>
     <%= form.text_area :content %>
   </div>
-
+  
+  <div>
+    <%= form.label :category, style: "display: block" %>
+    <%= form.select :category_id, Category.all.map { |c| [c.category,c.id] } %>
+  </div>
   <div>
     <%= form.submit %>
   </div>
