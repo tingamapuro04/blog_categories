@@ -1,0 +1,19 @@
+.show-main {
+  width: 60vw;
+  padding-top: 100px;
+  margin: auto;
+}
+
+.paths {
+  display: flex;
+  gap: 1.5%;
+  margin-top: 2%;
+}
+
+.btn-2 {
+  background: #252422;
+}
+
+.btn-4 {
+  background: #EF476F;
+}/*# sourceMappingURL=show.css.map */

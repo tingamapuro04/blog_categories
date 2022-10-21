@@ -1,0 +1,38 @@
+<div class="index_blog">
+  <p style="color: green"><%= notice %></p>
+
+  <h1 class="mobutu">Blogs Page</h1>
+
+  <div class="create-new">
+    <%= link_to "Create Blog", new_blog_path, class: "btn btn-1" %>
+  </div>
+
+  <div id="blogs">
+    <div class="blog-item">
+    <% @blogs.each do |blog| %>
+      <div class="inner">
+        <%= render blog %>
+        <p>
+          <%= link_to "view", blog, class: "btn" %>       
+        </p>
+      </div>
+    <% end %>
+    </div>
+
+    <div class="blog-cat">
+      <h3 class="Cat-head">Categories</h3>
+        <% @categories.each do |cat| %>
+        <ul class="ordered-blog">
+          <li class="list-item">
+            <p><%= link_to cat.category, blogs_path(:cate => cat.id) %>: <span id="count"> <%= cat.blogs.count %> </span></p>
+          </li>
+        </ul>
+        
+      <% end %>
+    </div>
+
+  </div>
+
+  
+
+</div>

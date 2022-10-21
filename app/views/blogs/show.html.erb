@@ -1,0 +1,11 @@
+<div class="show-main">
+  <p style="color: green"><%= notice %></p>
+
+  <%= render @blog %>
+
+  <div class="paths">
+    <%= link_to "Edit", edit_blog_path(@blog), class: "btn btn-2" %>
+    <%= link_to "Back", blogs_path, class: "btn btn-3" %>
+    <%= button_to "Delete", @blog, method: :delete, class: "btn btn-4" %>
+  </div>
+</div>
